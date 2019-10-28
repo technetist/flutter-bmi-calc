@@ -1,9 +1,5 @@
+import 'package:bmi_calculator/constants.dart';
 import 'package:flutter/material.dart';
-
-const TextStyle iconTextStyle = TextStyle(
-  fontSize: 18,
-  color: Color(0xFF8D8E98),
-);
 
 class IconCard extends StatelessWidget {
   IconCard({@required this.iconContent, this.iconText});
@@ -23,7 +19,7 @@ class IconCard extends StatelessWidget {
         SizedBox(height: 15),
         Text(
           this.iconText.toUpperCase(),
-          style: iconTextStyle,
+          style: kCardTextStyle,
         ),
       ],
     );
